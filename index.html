@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-main">
+            <img id="logo" src="https://www.achieversit.com/assets/images/logo-white.png" alt="">
+            <i class="fa-solid fa-bars fa-xl" id="header-icon1"></i>
+            <select name="cars" class="all">
+                <option value="All">All</option>
+                <option value="option 01">option 01</option>
+                <option value="option 02">option 02</option>
+                <option value="option 03">option 03</option>
+                <option value="option 04">option 04</option>
+                <option value="option 01">option 05</option>
+            </select>
+            <input type="text" placeholder="Search" name="text" class="input">
+            <i class="fa-solid fa-magnifying-glass fa-xl" id="header-icon2"></i>
+            <i class="fa-solid fa-user" id="header-icon3"></i>
+            <i class="fa-solid fa-cart-shopping" id="shopping-cart"></i>
+            <section id="sec-cart">
+                <div>
+                    <p class="sec-div-p"><b>Shopping Cart</b></p>
+                </div>
+                <hr>
+                <div class="hidden-cart-div">
+                    <div>
+                        <p class="hidden-cart-p1">Hollow Port</p>
+                        <i class="fa-solid fa-shirt fa-xl" style="color: darkred;" id="hidden-cart-icon1"></i>
+                        <p class="hidden-cart-p2">Brown XL <i class="fa-solid fa-trash fa-sm"
+                                style="color: #e82121;"></i></p>
+                    </div>
+                    <div class="hidden-cart-div2">
+                        <p> <i class="fa-solid fa-minus fa-sm" style="color: #808389;"></i> 1 <i
+                                class="fa-solid fa-plus fa-sm" style="color: #9399a5;"></i> $36.00</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="hidden-cart-div">
+                    <div>
+                        <p class="hidden-cart-p1">Hollow Port</p>
+                        <i class="fa-solid fa-shirt fa-xl" style="color: rgb(6, 63, 6);" id="hidden-cart-icon1"></i>
+                        <p class="hidden-cart-p2">Brown XL <i class="fa-solid fa-trash fa-sm"
+                                style="color: #e82121;"></i></p>
+                    </div>
+                    <div class="hidden-cart-div2">
+                        <p> <i class="fa-solid fa-minus fa-sm" style="color: #808389;"></i> 1 <i
+                                class="fa-solid fa-plus fa-sm" style="color: #9399a5;"></i> $36.00</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="hidden-cart-div">
+                    <div>
+                        <p class="hidden-cart-p1">Hollow Port</p>
+                        <i class="fa-solid fa-shirt fa-xl" style="color:navy;" id="hidden-cart-icon1"></i>
+                        <p class="hidden-cart-p2">Brown XL <i class="fa-solid fa-trash fa-sm"
+                                style="color: #e82121;"></i></p>
+                    </div>
+                    <div class="hidden-cart-div2">
+                        <p> <i class="fa-solid fa-minus fa-sm" style="color: #808389;"></i> 1 <i
+                                class="fa-solid fa-plus fa-sm" style="color: #9399a5;"></i> $36.00</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="hidden-cart-div">
+                    <div>
+                        <p class="hidden-cart-p1">Hollow Port</p>
+                        <i class="fa-solid fa-shirt fa-xl" style="color:rgb(84, 172, 13)" id="hidden-cart-icon1"></i>
+                        <p class="hidden-cart-p2">Brown XL <i class="fa-solid fa-trash fa-sm"
+                                style="color: #e82121;"></i></p>
+                    </div>
+                    <div class="hidden-cart-div2">
+                        <p> <i class="fa-solid fa-minus fa-sm" style="color: #808389;"></i> 1 <i
+                                class="fa-solid fa-plus fa-sm" style="color: #9399a5;"></i> $36.00</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="hidden-cart-div1">
+                    <div>
+                        <p class="hidden-cart-p3"><b>Subtotal Price:</b></p>
+                    </div>
+                    <div>
+                        <p class="hidden-cart-p3"><b>$ 144</b></p>
+                    </div>
+                </div>
+                <div class="btn-div1">
+                    <div class="btn-div2">
+                        <button class="btn">VIEW CART</button>
+                    </div>
+                    <div class="btn-div2">
+                        <button class="btn" style="background-color: blueviolet;color: white;">CHECKOUT</button>
+                    </div>
+                </div>
+            </section>
+            <ul id="ul">
+                <li style="border-top-left-radius: 10px;border-top-right-radius: 10px;padding: 10px;"><b>ART &
+                        CRAFT</b><i class="fa-solid fa-greater-than fa-sm" style="margin-left: 113px;color: black;"></i>
+                </li>
+                <li style="padding: 10px;"><b>FASHION</b><i class="fa-solid fa-greater-than fa-sm"
+                        style="margin-left: 150px;color: black;"></i></li>
+                <li style="padding: 10px;"><b>HEALTH & HOUSEHOLD</b><i class="fa-solid fa-greater-than fa-sm"
+                        style="margin-left: 35px;color: black;"></i></li>
+                <li style="padding: 10px;"><b>BAGES & SHOES</b><i class="fa-solid fa-greater-than fa-sm"
+                        style="margin-left: 88px;color: black;"></i></li>
+                <li style="padding: 10px;"><b>JEWELLERY & WATCHES</b><i class="fa-solid fa-greater-than fa-sm"
+                        style="margin-left: 25px;color: black;"></i></li>
+                <li style="padding: 10px;"><b>BEAUTY & HEALTH</b><i class="fa-solid fa-greater-than fa-sm"
+                        style="margin-left: 72px;color: black;"></i></li>
+                <li style="padding: 10px;"><b>ELECTRONICS</b><i class="fa-solid fa-greater-than fa-sm"
+                        style="margin-left: 107px;color: black;"></i></li>
+                <li style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;padding: 10px;"><b>HOME &
+                        GARDEN</b><i class="fa-solid fa-greater-than fa-sm" style="margin-left:84px;color: black;"></i>
+                </li>
+            </ul>
+            <p class="red-p">88</p>
+        </div>
+    </header>
+    <!-- main-img -->
+    <section class="main-img">
+        <div class="main-sec-div">
+            <p class="main-sec-p">Effortlessly cool, for<br>the tradionalists of<br>today</p>
+            <h5 class="main-sec-h5"><a href="" style="text-decoration: none;">EXPLORE COLLECTION</a></h5>
+        </div>
+    </section>
+    <!-- delivery-buying-card -->
+    <section class="delivery-sec">
+        <div id="one">
+            <i class="fa-solid fa-truck-fast fa-2xl" id="cards-i"></i>
+            <h2>Two-hour delivery</h2>
+            <p>Available in most metros on selected in-stock products</p>
+            <h5 class="cards-h5">LEARN MORE</h5>
+        </div>
+        <div id="two">
+            <i class='bx bxs-message-alt-detail' id="cards-i"></i>
+            <h2 style="margin-top: 0%;">Get help buying</h2>
+            <p>Have a question?Call a Specialist or chat online for help</p>
+            <h5 class="cards-h5">CONTACT US</h5>
+        </div>
+        <div id="three">
+            <i class="fa-solid fa-ticket fa-2xl" id="cards-i"></i>
+            <h2>Find the card for you</h2>
+            <p>Get 3% Daily Cash with special financing offers from us</p>
+            <h5 class="cards-h5">LEARN MORE</h5>
+        </div>
+    </section>
+    <!-- clock -->
+    <section class="clock-sec">
+        <div id="clock-div1">
+            <div class="clock-div1">
+                <img src="./images/product-1.jpg" alt="" id="img1" width="100%">
+            </div>
+            <div class="clock-div2" id="metro1">
+                <h2 class="clock-h2">Metro 38 Date</h2>
+                <p>Reference 1102</p>
+                <button class="clock-btn"><i class='bx bx-cart-alt'></i>$399</button>
+            </div>
+        </div>
+        <div id="clock-div2">
+            <div class="clock-div1">
+                <img src="./images/product-1.jpg" alt="" id="img2" width="100%">
+            </div>
+            <div class="clock-div2" id="metro2">
+                <h2 class="clock-h2">Metro 38 Date</h2>
+                <p>Reference 1102</p>
+                <button class="clock-btn"><i class='bx bx-cart-alt'></i>$399</button>
+            </div>
+        </div>
+    </section>
+    <!-- VR -->
+    <section class="VR-sec">
+        <div class="di">
+            <img src="./images/content-2.jpg" alt="" width="100%" height="300px">
+        </div>
+        <div class="VR-div">
+            <h3>ALL-IN-ONE-VR</h3>
+            <h2 class="VR-h2">Always ready when you<br>are </h2>
+            <p>Oculus Go is our all-in-one-VR headset that's portable<br>and easy to use.Experience entertainment on the
+                go<br>with no PC,wires or hassles. </p>
+        </div>
+    </section>
+    <!-- 3-VRs -->
+    <section class="VRs-sec">
+        <div>
+            <div class="vr-img">
+                <img src="./images/product-2.jpg" alt="" width="100%">
+            </div>
+            <div class="VRs-div1">
+                <h2>Oculus Quest</h2>
+                <p class="VRs-p">All in one gaming headset with lightweight,flexible design</p>
+                <div class="VRs-div2">
+                    <h2>$399</h2>
+                    <button class="VRs-btn"><i class='bx bx-cart-alt'></i><b>Add To Cart</b></button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vr-img">
+                <img src="./images/product-2.jpg" alt="" width="100%">
+            </div>
+            <div class="VRs-div1">
+                <h2>Oculus Quest</h2>
+                <p class="VRs-p">All in one gaming headset with lightweight,flexible design</p>
+                <div class="VRs-div2">
+                    <h2>$399</h2>
+                    <button class="VRs-btn"><i class='bx bx-cart-alt'></i><b>Add To Cart</b></button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vr-img">
+                <img src="./images/product-2.jpg" alt="" width="100%">
+            </div>
+            <div class="VRs-div1">
+                <h2>Oculus Quest</h2>
+                <p class="VRs-p">All in one gaming headset with lightweight,flexible design</p>
+                <div class="VRs-div2">
+                    <h2>$399</h2>
+                    <button class="VRs-btn"><i class='bx bx-cart-alt'></i><b>Add To Cart</b></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AMBASSADOR -->
+    <section class="ambassador-sec">
+        <div class="ambassador-div">
+            <h2 class="ambassador-h2">THE PRIME<br>AMBASSADOR</h2>
+            <h5 class="ambassador-h5"><b>EXPLORE COLLECTION</b></h5>
+        </div>
+    </section>
+
+    <!-- Stater Plan -->
+    <section class="stater-sec">
+        <div class="stater-div1">
+            <div class="stater-div2">
+                <div>
+                    <p style="font-size: 20px;">Stater Plan</p>
+                </div>
+                <div>
+                    <h2 class="stater-h2">$10</h2>
+                    <p class="stater-p">/weekly</p>
+                </div>
+            </div>
+            <img src="./images/pricing-5.png" alt="" width="50%" height="150px" style="margin-left: 75px;">
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> 2 Accounts</p>
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> Up to 5 GB Space</p>
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> 1 Domain</p>
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> 24/7 Support</p>
+            <button class="stater-btn"><b>GET STARTED</b></button>
+        </div>
+        <div class="stater-div1">
+            <div class="stater-div2">
+                <div>
+                    <p style="font-size: 20px;">Stater Plan</p>
+                </div>
+                <div>
+                    <h2 class="stater-h2">$50</h2>
+                    <p class="stater-p">/monthly</p>
+                </div>
+            </div>
+            <img src="./images/pricing-5.png" alt="" width="50%" height="150px" style="margin-left: 75px;">
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> 2 Accounts</p>
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> Up to 5 GB Space</p>
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> 1 Domain</p>
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> 24/7 Support</p>
+            <button class="stater-btn"><b>GET STARTED</b></button>
+        </div>
+        <div class="stater-div1">
+            <div class="stater-div2">
+                <div>
+                    <p style="font-size: 20px;">Stater Plan</p>
+                </div>
+                <div>
+                    <h2 class="stater-h2">$90</h2>
+                    <p class="stater-p">/yearly</p>
+                </div>
+            </div>
+            <img src="./images/pricing-5.png" alt="" width="50%" height="150px" style="margin-left: 75px;">
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> 2 Accounts</p>
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> Up to 5 GB Space</p>
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> 1 Domain</p>
+            <p><i class="fa-solid fa-square-check" style="color: #858a93;"></i> 24/7 Support</p>
+            <button class="stater-btn"><b>GET STARTED</b></button>
+        </div>
+    </section>
+
+    <!-- ONE-VR -->
+    <section class="one-VR-sec">
+        <div style="text-align: center;" class="one-div">
+            <p style="margin-bottom: 0%;">All-in-One VR</p>
+            <h2 style="font-size: 40px;margin-top: 0%;">Oculus VR</h2>
+            <img src="./images/product-3.jpg" alt="" width="80%" class="one-img">
+        </div>
+        <div class="one-VR-div1">
+            <img src="./images/thunb-1.jpg" alt="" width="70px" id="sm1">
+            <img src="./images/thunb-2.jpg" alt="" width="70px" id="sm2">
+            <img src="./images/thunb-3.jpg" alt="" width="70px" id="sm3">
+            <img src="./images/thunb-4.jpg" alt="" width="70px" id="sm4">
+            <img src="./images/thunb-5.jpg" alt="" width="70px" id="sm5">
+        </div>
+        <div class="one-VR-div2">
+            <div>
+                <div>
+                    <p>All-In-One VR</p>
+                    <h2>Oculus VR</h2>
+                </div>
+                <div>
+                    <p>Select Your Oculus:</p>
+                    <img src="./images/product-items-1.jpg" alt="" id="oculus-img1">
+                    <img src="./images/product-items-2.jpg" alt="" id="oculus-img2">
+                    <img src="./images/product-items-3.jpg" alt="" id="oculus-img3">
+                </div>
+                <div class="one-VR-div3">
+                    <div>
+                        <p>Select Color:<b> Grey </b></p>
+                        <div style="display: flex;">
+                            <div style="padding:5px;">
+                                <h1 class="one-VR-h1" style="background-color:rgb(203, 209, 209);"></h1>
+                            </div>
+                            <div style="padding:5px;">
+                                <h1 class="one-VR-h1" style="background-color:pink;"></h1>
+                            </div>
+                            <div style="padding:5px;">
+                                <h1 class="one-VR-h1" style="background-color:rgb(119, 118, 118);"></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Memory (GB):</p>
+                        <select class="one-VR-all" name="cards">
+                            <option value="32gb">32gb</option>
+                            <option value="64gb">64gb</option>
+                            <option value="128gb">128gb</option>
+                            <option value="256gb">256gb</option>
+                            <option value="512gb">512gb</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Select Quantity:</p>
+                        <div class="one-VR-div4">
+                            <div>
+                                <i class="fa-solid fa-minus fa-sm" style="margin-top: 14px;"></i>
+                            </div>
+                            <div class="one-VR-div5">
+                                <h2 style="margin-top: 0px;margin-bottom: 0%;">1</h2>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-plus fa-sm" style="margin-top: 13px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex;" class="ship">
+                    <div class="one-VR-div6">
+                        <p style="margin-top: 0%;">Select Shipping Country:</p>
+                    </div>
+                    <div class="one-VR-div6" style="padding: 0px 10px;">
+                        <h3 style="margin-top: 0%;">+ $ 30 USD</h3>
+                    </div>
+                </div>
+                <select class="one-VR-all1" name="country">
+                    <option value="Select Country">--Select Country--</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Spain">Spain</option>
+                </select>
+            </div>
+
+
+            <div class="one-VR-div7">
+                <div>
+                    <p style="margin-bottom:0px ;">Price:</p>
+                </div>
+                <div style="display: flex;">
+                    <div>
+                        <h2 class="one-VR-h2">$ 149 USD</h2>
+                    </div>
+                    <div class="one-VR-div8">
+                        <h4 class="one-VR-h4">$ 179 USD</h4>
+                    </div>
+                </div>
+                <div class="one-VR-div9">
+                    <button class="one-VR-div9-btn1"><i class='bx bx-cart-alt'></i><b> ADD TO CART</b>
+                    </button>
+                    <button class="one-VR-div9-btn2"><i class='bx bx-cart-alt'></i><b> BUY NOW</b>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 3-simple-watches -->
+    <section class="watches-sec">
+        <div class="watches-div">
+            <h2>Haritage 1921</h2>
+            <p>Minimalistic & Modern</p>
+            <h5 style="color: blueviolet;"><a href="" style="text-decoration: none;">EXPLORE <i
+                        class="fa-solid fa-greater-than"></i></a></h5>
+            <img src="./images/product-4.jpg" alt="" class="wat-img">
+        </div>
+        <div class="watches-div">
+            <h2>Haritage 1921</h2>
+            <p>Minimalistic & Modern</p>
+            <h5 style="color: blueviolet;"><a href="" style="text-decoration: none;">EXPLORE <i
+                        class="fa-solid fa-greater-than"></i></a></h5>
+            <img src="./images/product-4.jpg" alt="" class="wat-img">
+        </div>
+        <div class="watches-div">
+            <h2>Haritage 1921</h2>
+            <p>Minimalistic & Modern</p>
+            <h5 style="color: blueviolet;"><a href="" style="text-decoration: none;">EXPLORE <i
+                        class="fa-solid fa-greater-than"></i></a></h5>
+            <img src="./images/product-4.jpg" alt="" class="wat-img">
+        </div>
+    </section>
+    <!-- clients -->
+    <section class="clients-sec">
+        <div class="clients-div" id="hl1">
+            <i class="fa-solid fa-users fa-xl" id="clients-i"></i>
+            <h2 class="clients-h2">300</h2>
+            <h4 style="margin-top: 0%;">Happy Clients</h4>
+        </div>
+
+        <div class="clients-div" id="hl2">
+            <i class="fa-solid fa-check fa-xl" id="clients-i"></i>
+            <h2 class="clients-h2">30</h2>
+            <h4 style="margin-top: 0%;">Complete Projects</h4>
+        </div>
+        <div class="clients-div">
+            <i class="fa-regular fa-hourglass fa-xl" id="clients-i"></i>
+            <h2 class="clients-h2">12</h2>
+            <h4 style="margin-top: 0%;">Pending Projects</h4>
+        </div>
+        <div class="clients-div">
+            <i class="fa-solid fa-mug-hot fa-xl" id="clients-i"></i>
+            <h2 class="clients-h2">960</h2>
+            <h4 style="margin-top: 0%;">Cup Of Tea</h4>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-div1">
+            <div>
+                <h2>Get in touch</h2>
+                <p style="color:#8f9194 ;">Be the first to know when new products drop and stay tuned.</p>
+            </div>
+            <div class="footer-in-div">
+                <p class="footer-p1">Enter your email address</p>
+                <span>
+                    <i class="fa-solid fa-user" id="footer-i1" class="footer-icon"></i>
+                    <input type="text" placeholder="user@email.com" class="footer-input">
+                    <button class="footer-btn"><i class="fa-brands fa-google-play" style="color: #f7f7f8;"></i></button>
+                </span>
+            </div>
+        </div>
+        <hr style="width: 90%;">
+        <div class="footer-div2">
+            <div style="display: flex;">
+                <div>
+                    <p>Follow Us:</p>
+                </div>
+                <div class="footer-div3">
+                    <i class="fa-brands fa-facebook-f fa-xl" id="footer-i2"></i>
+                    <i class="fa-brands fa-twitter fa-xl" id="footer-i2"></i>
+                    <i class="fa-brands fa-linkedin fa-xl" id="footer-i2"></i>
+                    <i class="fa-brands fa-instagram fa-xl" id="footer-i2"></i>
+                    <i class="fa-brands fa-whatsapp fa-xl" id="footer-i2"></i>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <p>We Accept:</p>
+                </div>
+                <div class="footer-div4">
+                    <img src="./images/payment.png" alt="">
+                </div>
+            </div>
+        </div>
+        <hr style="width: 90%;">
+        <div class="footer-div5">
+            <div class="Categories">
+                <p style="font-size: 25px;">Categories</p>
+                <h4>Outfit</h4>
+                <h4>Sunglasses</h4>
+                <h4>Watches</h4>
+                <h4>Bags</h4>
+            </div>
+            <div class="Information">
+                <p style="font-size: 25px;">Information</p>
+                <h4>About Us</h4>
+                <h4>Contact Us</h4>
+                <h4>Sitemap</h4>
+                <h4>FAQs Page</h4>
+            </div>
+            <div class="Account">
+                <p style="font-size: 25px;">My Account</p>
+                <h4>Orders</h4>
+                <h4>Downloads</h4>
+                <h4>Addresses</h4>
+                <h4>Account details</h4>
+            </div>
+            <div class="Community">
+                <p style="font-size: 25px;">Community</p>
+                <h4>VR for Good</h4>
+                <h4>Launch Pad</h4>
+                <h4>Creators Lab</h4>
+                <h4>Forums</h4>
+            </div>
+        </div>
+        <h3 style="margin-top: 50px;text-align: center;">Created By Mr.Danish Kohli|All Rights Reserved.</h3>
+    </footer>
+
+</body>
+
+
+</html>
